@@ -7,12 +7,15 @@ import Footer from "./components/Footer";
 
 function App() {
 
+  function notes() {
+
     // Functions to support conditional rendering which
     // return specific pages from user-defined components
 
     // State: bools could be used to guide conditional rendering.
     // onClick jsx-function: used to set bool
-
+    
+  }
 
 
 
