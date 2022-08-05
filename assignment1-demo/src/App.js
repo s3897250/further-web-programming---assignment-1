@@ -3,7 +3,8 @@ import './App.css';
 import Header from "./components/Header";
 import MainContent from "./components/MainContent"
 import Footer from "./components/Footer";
-
+import { BrowserRouter, NavLink, Routes, Route } from 'react-router-dom';
+import Signin from "./components/Signin"
 
 function App() {
 
@@ -23,12 +24,21 @@ function App() {
 
     <div className="body">
       
+      <BrowserRouter>
 
-      <Header></Header>
+        <Header></Header> 
 
-      <MainContent></MainContent>
+        {/* <MainContent></MainContent> */}
 
-      <Footer></Footer>
+
+        <Routes>
+          <Route path="" element={<MainContent/>}></Route>
+          <Route path="/signin" element={<Signin/>}></Route>
+        </Routes>
+
+        <Footer></Footer>
+      
+      </BrowserRouter>
 
       
     </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from 'react-router-dom'
 
 const Main = () => {
 
@@ -32,7 +33,7 @@ const Main = () => {
             </div>
             
             <div className="sign-up">
-              <button><a href="index.html">Sign Up</a></button>
+              <Link to="/signin" style={{ textDecoration: 'none' }}><button><p>Sign Up</p></button></Link>
             </div>
 
           </div>
